@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-color: #141414;
+}
+
+:root {
+    --main-color: #2C5E49;
+    --sec-color:#A609F0;
+    --white:#FFFFFF;
+    --white2:#ffffffbe;
+}
+
+@font-face {
+    font-family: luicy;
+    src: url(fonts/Luicy-Regular\ Demo.ttf);
+}
+
+@font-face {
+    font-family: Reg;
+    src: url(fonts/AlbertSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Semi;
+    src: url(fonts/AlbertSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(fonts/AlbertSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: light;
+    src: url(fonts/AlbertSans-Light.ttf);
 }

@@ -1,0 +1,66 @@
+
+header{
+    width: 90%;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5%;
+}
+
+
+.whitelogo{
+    width: 100%;
+}
+
+.logo_name{
+    color: var(--white);
+    font-family: luicy;
+    font-size: 3vw;
+}
+
+nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    font-family: reg;
+    color: var(--white);
+    font-size: 1.2vw;
+}
+
+.dropdown_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+
+.cta-download-div{
+    width: 25%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cta-download{
+    width: 55%;
+    padding:  5%;
+    color: var(--white);
+    background-color: var(--sec-color);
+    font-family: semi;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
