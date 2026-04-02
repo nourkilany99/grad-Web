@@ -1,0 +1,39 @@
+.how_card{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    
+}
+
+.how_card_img{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 0;
+}
+
+.card_img{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card_numbr{
+    font-family: luicy;
+    position: absolute;
+    color: var(--white);
+    font-size: 5vw;
+}
+
+.how_p_div{
+    width: 35%;
+    font-family: light;
+    color: var(--white2);
+    font-size: 5vw;
+}
+

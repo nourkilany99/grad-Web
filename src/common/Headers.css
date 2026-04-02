@@ -1,0 +1,12 @@
+.header_div{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+.header{
+    font-family: luicy;
+    color: var(--main-color);
+    font-size: 5vw;
+    font-weight: 100;
+}

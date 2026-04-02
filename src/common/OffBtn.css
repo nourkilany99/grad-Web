@@ -1,0 +1,12 @@
+.offBtn_div{
+    background-color: #ffffff18;
+    padding: 4% 10%;
+    border-radius: 25px;
+    text-align: center;
+}
+.offBtn{
+    color: #ffffff21;
+    font-family: reg;
+    font-size: 1.5vw;
+    width: 10vw;
+}

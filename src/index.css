@@ -12,10 +12,12 @@ body{
     --sec-color:#A609F0;
     --white:#FFFFFF;
     --white2:#ffffffbe;
+    --pink:#DDAEC5;
 }
 
 @font-face {
     font-family: luicy;
+    font-weight: 100;
     src: url(fonts/Luicy-Regular\ Demo.ttf);
 }
 
@@ -37,4 +39,9 @@ body{
 @font-face {
     font-family: light;
     src: url(fonts/AlbertSans-Light.ttf);
+}
+
+@font-face {
+    font-family: decor;
+    src: url(fonts/MeaCulpa-Regular.ttf);
 }

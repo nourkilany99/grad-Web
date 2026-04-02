@@ -1,0 +1,12 @@
+.onBtn_div{
+    background-color: var(--sec-color);
+    padding: 4% 10%;
+    border-radius: 25px;
+    text-align: center;
+}
+.onBtn{
+    color: var(--white);
+    font-family: semi;
+    font-size: 1.5vw;
+    width: 10vw;
+}

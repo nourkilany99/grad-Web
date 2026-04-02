@@ -1,0 +1,12 @@
+.downBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: light;
+    color: var(--white);
+    gap: 5px;
+}
+
+.download_icon{
+    width: 1vw;
+}

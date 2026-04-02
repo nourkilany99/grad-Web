@@ -1,0 +1,51 @@
+.s3{
+    width: 95%;
+    padding: 5% 0 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 300vh;
+}
+
+.s3_hero{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 60%;
+    font-family: luicy;
+    font-weight: 200;
+    font-size: 8vw;
+    color: var(--main-color);
+    padding-top: 1%;
+}
+
+.line_green{
+    width: 100%;
+}
+
+.how_cntnt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5vw;
+    overflow: hidden;
+
+
+    gap: 10px;
+    height: 70%;
+    align-items: center;
+    will-change: transform;
+
+
+    width: max-content; /* 🔥 IMPORTANT */
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}

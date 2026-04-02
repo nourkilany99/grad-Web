@@ -1,10 +1,38 @@
-import React, { Component } from 'react';
-import logo from '../Assets/Img/WhiteLogo.svg';
+import React, {useEffect, useState } from 'react';
+import logo from '../Assets/Img/greenlogo.svg';
 import './Nav.css';
-import down from '../Assets/Img/VectorDown.svg'
-
+import { supabase } from '../Supabase';
 
 const Nav = () => { 
+    const [loading, setLoading] = useState(true);
+    const [nav,setnav] = useState("");
+    const [icons,seticons] = useState("");
+    const [buttons,setbuttons] = useState("");
+    
+
+    useEffect(()=>{
+    
+            async function getPageData(){
+            const navres = await supabase.from("Nav").select("*");
+            const iconsres = await supabase.from("icons").select("*");
+            const buttonsres = await supabase.from("cta_buttons").select("*");
+        
+            setnav(navres.data);
+            seticons(iconsres.data);
+            setbuttons(buttonsres.data);
+            setLoading(false);
+            }
+            
+            getPageData()
+    
+            },[])
+
+            if (loading) return <p>Loading....</p>;
+    
+
+
+
+
     return ( 
         <>
 
@@ -16,32 +44,118 @@ const Nav = () => {
             </div>
 
             <nav>
-                <p>How it works</p>
+                {
+                nav
+                .filter(nav => nav.id === 3)
+                .map((nav)=>{
+                return  <>
+                <p>{nav.label_en}</p>
+                </>
+                })
+                }
+                
 
                 <div className='dropdown_div'>
-                    <p>Solutions</p>
-                    <img src={down} alt='down_arrow'/>
+
+                {
+                nav
+                .filter(nav => nav.id === 4)
+                .map((nav)=>{
+                return  <>
+                <p>{nav.label_en}</p>
+                </>
+                })
+                }
+
+                {
+                icons
+                .filter(icons => icons.id === 1)
+                .map((icons)=>{
+                return  <>
+                <img src={icons.icons} alt='down_arrow'/>
+                </>
+                })
+                }
+                
                 </div>
 
                 <div className='dropdown_div'>
-                    <p>Safety</p>
-                    <img src={down} alt='down_arrow'/>
+                {
+                nav
+                .filter(nav => nav.id === 7)
+                .map((nav)=>{
+                return  <>
+                <p>{nav.label_en}</p>
+                </>
+                })
+                }
+                
+                {
+                icons
+                .filter(icons => icons.id === 1)
+                .map((icons)=>{
+                return  <>
+                <img src={icons.icons} alt='down_arrow'/>
+                </>
+                })
+                }
                 </div>
 
-                <p>Features</p>
+                {
+                nav
+                .filter(nav => nav.id === 2)
+                .map((nav)=>{
+                return  <>
+                <p>{nav.label_en}</p>
+                </>
+                })
+                }
 
-                <p>Pricing</p>
+                {
+                nav
+                .filter(nav => nav.id === 13)
+                .map((nav)=>{
+                return  <>
+                <p>{nav.label_en}</p>
+                </>
+                })
+                }
 
                 <div className='dropdown_div'>
-                    <p>Support</p>
-                    <img src={down} alt='down_arrow'/>
+                {
+                nav
+                .filter(nav => nav.id === 14)
+                .map((nav)=>{
+                return  <>
+                <p>{nav.label_en}</p>
+                </>
+                })
+                }
+                
+                {
+                icons
+                .filter(icons => icons.id === 1)
+                .map((icons)=>{
+                return  <>
+                <img src={icons.icons} alt='down_arrow'/>
+                </>
+                })
+                }
                 </div>
 
             </nav>
 
             <div className='cta-download-div'>
                 <div className='cta-download'>
-                    <p>Download App</p>
+                {
+                buttons
+                .filter(buttons => buttons.id === 1)
+                .map((buttons)=>{
+                return  <>
+                <p>{buttons.label_en}</p>
+                </>
+                })
+                }
                 </div>
             </div>
 
