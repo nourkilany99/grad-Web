@@ -1,0 +1,63 @@
+.s2_sol{
+    width: 90%;
+    display: flex;
+    padding: 2% 5%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardsol_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 9999;
+}
+
+.s3_sol{
+    width: 100%;
+    background-image: url(../Assets/Img/design_sides.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    margin-top: 5%;
+}
+
+.head_s3_sol{
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head_s3_sol_p{
+    width: 30%;
+    color: var(--white2);
+    font-family: reg;
+    font-size: 1.5vw;
+}
+
+.skill_rate_cntnt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill_rate_crds{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+}
+
+.rate_sol{
+    width: 30%;
+}

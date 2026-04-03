@@ -1,0 +1,13 @@
+.card_sol{
+    width: 18%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: reg;
+    color: var(--main-color);
+    text-align: center;
+    flex-direction: column;
+    height: 20vw;
+    border-radius: 15px;
+}

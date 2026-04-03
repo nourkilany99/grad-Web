@@ -1,0 +1,40 @@
+.s_teens_hero{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.solution_img{
+    width: 50%;
+    position: relative;
+}
+
+.solution_p{
+    font-family: luicy;
+    color: var(--white);
+    border-bottom: solid 1px var(--white);
+    font-size: 10vw;
+    position: absolute;
+    margin-right: -50%;
+    margin-top: 10%;
+}
+
+.solution_p2{
+    width: 40%;
+    font-family: reg;
+    color: var(--white2);
+    font-size: 1.5vw;
+    text-align: end;
+    margin-top: -5%;
+    margin-right: -48%;
+
+}
+
+.decor_sol{
+    position: absolute;
+    left: 0;
+    margin-top: -8%;
+}
+

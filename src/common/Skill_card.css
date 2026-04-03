@@ -1,0 +1,11 @@
+.skill_sol{
+    width: 10%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: reg;
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+}
