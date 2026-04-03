@@ -1,0 +1,107 @@
+.hero_how{
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.eureka_how{
+    font-family: reg;
+    font-size: 1.2vw;
+    color: var(--white);
+    margin-right: 0%;
+    position: absolute;
+    margin-top: -10%;
+}
+
+.how_p_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1vw; */
+}
+
+.hero_how_p{
+    color: var(--white);
+    font-family: bold;
+    font-size: 7vw;
+}
+
+.logo_how_hero{
+    width: 9%;
+    margin-right: -1.5%;
+    z-index: 100;
+}
+
+.hero_how_decor{
+    font-family: decor;
+    color: var(--pink);
+    font-size: 16vw;
+    margin-left: -4%;
+}
+
+.pink_line{
+    margin-top: -4%;
+}
+
+.How_s2{
+    width: 90%;
+    padding: 3% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: reg;
+    font-size: 1.7vw;
+    color: var(--white2);
+}
+
+.How_s2_p{
+    width: 35%;
+    line-height: 140%;
+}
+
+.How_s2_img{
+    width: 20%;
+}
+
+.explore_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -8%;
+}
+
+.expl_img{
+    width: 90%;
+    position: relative;
+}
+
+.exp_btn{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: light;
+    color: var(--white);
+    text-align: center;
+    margin-right: 5%;
+    position: absolute;
+    float: right;
+    right: 0;
+    margin-top: 2%;
+    gap: 2vw;
+}
+
+.exp_btn_down{
+    rotate: -90deg;
+    width: 2vw;
+}
+
+.div_steps{
+    margin-top: 8%;
+}

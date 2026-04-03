@@ -1,0 +1,46 @@
+.div_bck_steps{
+    width: 100%;
+    background-image: url(../Assets/Img/stepsBck.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vw;
+    margin: 3% 0;
+}
+
+.header_step{
+    width: 90%;
+    padding: 0 5%;
+}
+
+.div_steps_cntnt{
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.next_arrow{
+    width: 30%;
+    margin-top: -1%;
+}
+
+.div_next_arrow{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2vw;
+    color: var(--white);
+    font-family: light;
+    gap: 25px;
+}
+
+.div_all_steps{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
