@@ -1,5 +1,5 @@
 import React, {useEffect, useState } from 'react';
-import logo from '../Assets/Img/greenlogo.svg';
+import logo from '../Assets/Img/WhiteLogo.svg';
 import './Nav.css';
 import { supabase } from '../Supabase';
 

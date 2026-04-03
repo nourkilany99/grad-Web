@@ -12,6 +12,14 @@ import Section3 from '../component/Section3';
 import Sticker_verify from '../Assets/Img/identy_stick.svg';
 import OnBtns from '../common/OnBtns'
 import OffBtn from '../common/OffBtn';
+import user_feed_img from '../Assets/Img/user_feed_img1.svg';
+import rate from '../Assets/Img/rate.svg';
+import Feedback from '../common/Feedback';
+import back_icon from '../Assets/Img/back_icon.svg';
+import next_icon from '../Assets/Img/next_icon.svg';
+import logo from '../Assets/Img/greenlogo.svg';
+import loc_icon from '../Assets/Img/loc.svg';
+import grp_loc from '../Assets/Img/GroupLoc.svg';
 
 
 const Home = () => {    
@@ -162,6 +170,36 @@ const Home = () => {
             <OnBtns title='Teenagers' />
             <OffBtn title='Task owners' />
             <OffBtn title='Parents' />
+        </div>
+        
+        <div className='feed_opinion_div'>
+        <Feedback Img={user_feed_img} numberTask="20+ tasks" name='Jana Hatem' numberRate='4.6'  age='18 years old' rate={rate} feed='The verification system made me feel comfortable accepting tasks.' />
+        <Feedback Img={user_feed_img} numberTask="20+ tasks" name='Jana Hatem' numberRate='4.6'  age='18 years old' rate={rate} feed='The verification system made me feel comfortable accepting tasks.' />
+        <Feedback Img={user_feed_img} numberTask="20+ tasks" name='Jana Hatem' numberRate='4.6'  age='18 years old' rate={rate} feed='The verification system made me feel comfortable accepting tasks.' />
+        </div>
+
+        <div className='bck-nxt-div'>
+            <img src={back_icon} alt='back_icon' className='bck_icon' />
+            <p>1 / 7</p>
+            <img src={next_icon} alt='back_icon' className='bck_icon' />
+        </div>
+    </section>
+
+    <section className='s6'>
+        <div className='div_s6'>
+            <div className='div1_s6'>
+            <img src={logo} alt='logo' className='logo_feat' />
+            <p className='head_s6_h'>Top features</p>
+            <div className='div1_s6_loc'>
+                <img src={loc_icon} alt='loc_icon' className='loc_icon' />
+                <p>Smart Task Matching</p>
+            </div>
+            <p className='p_loc'>Location-based discovery and filtering connect the right people efficiently.</p>
+            <p className='Explore_btn'>Explore features</p>
+            </div>
+            <div className='div2_s6'>
+                <img src={grp_loc} alt='grp_loc' className='' />
+            </div>
         </div>
     </section>
 

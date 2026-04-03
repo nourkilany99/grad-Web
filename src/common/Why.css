@@ -1,0 +1,55 @@
+
+.why_card_div{
+    width: 18vw;
+    padding:2%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 2vw;
+    /* background-color: rgb(248, 215, 221); */
+    flex-direction: column;
+    border-radius: 15px;
+    height: 43vh;
+}
+
+.header_why_card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: semi;
+    color: var(--main-color);
+}
+
+.stickerWhy{
+    width: 5vw;
+}
+
+.headWhy{
+    text-align: start;
+    font-size: 1.5vw;
+}
+
+.p1card1Why{
+    font-family: light;
+    text-align: start;
+    color: var(--main-color);
+    font-size: 1.3vw;
+}
+
+.divpointsWhy{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    font-family: light;
+    color: var(--main-color);
+    padding-left: 5%;
+    
+}
+
+.Whyend{
+    text-align: start;
+    color: black;
+    font-family: semi;
+}

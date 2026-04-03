@@ -1,0 +1,7 @@
+.whiteTitle{
+    width: 100%;
+    font-family: luicy;
+    font-size: 4vw;
+    color: var(--white);
+    text-align: start;
+}

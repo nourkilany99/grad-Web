@@ -5,7 +5,7 @@ const OnBtns = (props) => {
     return ( 
         <>
         <div className='onBtn_div'>
-        <p className='onBtn'>{props.title}</p>
+        <p className='onBtn' >{props.title}</p>
         </div>
         </>
      );

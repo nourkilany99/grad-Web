@@ -27,7 +27,7 @@ header{
 }
 
 .logo_name{
-    color: var(--main-color);
+    color: var(--white);
     font-family: luicy;
     font-size: 3vw;
     font-weight: 100;

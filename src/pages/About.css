@@ -1,0 +1,162 @@
+.s1_about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.about_p1{
+    font-family: reg;
+    font-size: 1.2vw;
+    color: var(--white);
+    margin-right: -8%;
+    position: absolute;
+    margin-top: -10%;
+}
+
+.about_p1_decor{
+    color: var(--pink);
+    font-family: decor;
+    font-size: 20vw;
+    margin-right: 10%;
+    margin-top: -5%;
+    position: relative;
+}
+
+.stickers_hero_about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_p2{
+    font-family: luicy;
+    font-size: 13vw;
+    color: var(--main-color);
+    margin-top: -5%;
+}
+
+.line_about{
+    width: 80%;
+}
+
+.text_about_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Sticker1_about{
+    width: 8%;
+    position: absolute;
+    margin-top: -9%;
+    margin-left: -25%;
+}
+
+.Sticker2_about{
+    width: 18%;
+    margin-top: -18%;
+    margin-right: -46%;
+    z-index: 100;
+    position: absolute;
+}
+
+.mission_all_box{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.box_date{
+    font-family: reg;
+    color: var(--white);
+    font-size: 1.3vw;
+    padding-right: 10%;
+    padding-bottom: 1%;
+}
+
+.mission_all{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.decor_about{
+    width: 10%;
+}
+
+.whyUs_s{
+    width: 90%;
+    padding:8% 5% 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.why_all_cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 3%;
+}
+
+.target_div{
+    width: 90%;
+    padding: 5%;
+}
+
+.line{
+    width: 40%;
+}
+
+.targets_card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.target1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.targetWho{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:rgb(194, 230, 194) ;
+    font-family: semi;
+    font-size: 1.8vw;
+    padding-top: 7%;
+}
+
+.targetWho_btn{
+    font-size: 1vw;
+    font-family: light;
+    background-color:rgb(248, 230, 233) ;
+    border-radius: 25px;
+    color: var(--main-color);
+    padding: 2% 5%;
+}
+
+.target1img{
+    width: 100%;
+    padding: 3% 0;
+}
