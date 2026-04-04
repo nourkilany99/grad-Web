@@ -5,6 +5,7 @@ import About from './pages/About';
 import How from './pages/How';
 import Teen from './pages/Teens';
 import Parents from './pages/Parents';
+import TaskOwner from './pages/Taskowner';
 
 const RoutinhApp = () => {
     return ( 
@@ -16,6 +17,7 @@ const RoutinhApp = () => {
                 <Route path='/How' element={<How />} />
                 <Route path='/Teen' element={<Teen />} />
                 <Route path='/Parents' element={<Parents />} />
+                <Route path='/TaskOwner' element={<TaskOwner />} />
 
             </Routes>
 

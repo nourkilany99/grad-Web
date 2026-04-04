@@ -5,11 +5,11 @@ import Why from '../common/Why';
 import sticker from '../Assets/Img/lock.svg';
 import TempCard from '../common/TempCard';
 
-const GreenDiv = () => {
+const GreenDiv = (props) => {
     return ( 
         <>
         <div className='green_div'>
-            <TitleWhite title='Core Values' />
+            <TitleWhite title={props.title} />
             <div className='tempcards'>
             <TempCard bgColor=' rgb(248, 230, 234)' header='1. Safety First' sticker={sticker} head2="Protection is the foundation of every system feature." />
             <TempCard bgColor=' rgb(248, 230, 234)' header='2. Transparency' sticker={sticker} head2="Clear payments, visible ratings, defined processes." />

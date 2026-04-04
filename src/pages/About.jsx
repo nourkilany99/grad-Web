@@ -65,7 +65,7 @@ const About = () => {
 
         <DownloagTag/>
         
-        <GreenDiv />
+        <GreenDiv title='Core Values' />
         
         <div className='target_div'>
             <Headers header='Target Audience' line={line} />

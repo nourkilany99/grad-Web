@@ -4,8 +4,6 @@ import Nav from '../component/Nav';
 import SecSolution from '../component/SecSolution';
 import decor_sol from '../Assets/Img/decor_sol.svg';
 import decor_about from '../Assets/Img/decor_mission.svg';
-import lock from '../Assets/Img/lock.svg';
-import connect from '../Assets/Img/connect.svg';
 import Mission from '../common/Mission';
 import Cardsol from '../common/Card_sol'
 import icon from '../Assets/Img/sticker2.svg';

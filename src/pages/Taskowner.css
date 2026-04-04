@@ -1,0 +1,20 @@
+.green_process{
+    width: 90%;
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    background-color: var(--main-color);
+    flex-direction: column;
+
+}
+
+.process_crds{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+}

@@ -65,7 +65,7 @@ const Teens = () => {
         <WalkThrough  no='2.' wayImg={mobile} details='Login or Sign up'  />
         <WalkThrough  no='3.' wayImg={mobile} details='Login or Sign up'  />
         <WalkThrough  no='4.' wayImg={mobile} details='Login or Sign up'  />
-        <WalkThrough  no='1.' wayImg={mobile} details='Login or Sign up'  />
+        <WalkThrough  no='5.' wayImg={mobile} details='Login or Sign up'  />
         </div>
         </div>
             
