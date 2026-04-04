@@ -1,11 +1,12 @@
-.green_div{
-    width: 90%;
-    padding:  5%;
+.green2_div{
+    width: 80%;
+    padding: 4% 10% 2% 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--main-color);
+    margin-top: 5%;
 }
 
 .tempcards{
@@ -13,4 +14,48 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.green2_head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+}
+
+.green2_title{
+    font-family: luicy;
+    color: var(--white);
+    font-size: 3.5vw;
+}
+
+.green2_subtitle{
+    color: var(--white2);
+    font-family: reg;
+    font-size: 2vw;
+}
+
+.green2_cntnt{
+    width: 90%;
+    padding: 0 10% 0 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.green2_img{
+    width: 30%;
+}
+
+.green2_ps{
+    font-family: light;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    font-size: 2vw;
+    gap: 5px;
 }

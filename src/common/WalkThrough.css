@@ -1,0 +1,77 @@
+.WalkThrough{
+    width: 90%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.WalkThrough_head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    font-family: luicy;
+    color: var(--main-color);
+    font-size: 3vw;
+}
+
+.WalkThrough_divs{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 2%;
+}
+
+.WalkThrough_div1{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+    flex-direction: column;
+    padding: 2% 0;
+}
+.WalkThrough_div1_card{
+    width: 100%;
+    border: solid 1px #b60c9c;
+    border-style: dashed;
+    stroke-dasharray: 6 16;
+    border-radius: 15px;
+    height: 25vw;
+    /* overflow: hidden; */
+    position: relative;
+    margin-top: 8%;
+}
+
+.line_walk{
+    width: 30%;
+}
+
+.WalkThrough_no{
+    font-family: luicy;
+    color: var(--white);
+    position: absolute;
+    font-size: 10vh;
+    z-index: 9999;
+    top: 0;
+    margin-top: -10%;
+    margin-left: -5%;
+}
+
+.walk_mobile{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.walk_detail{
+    width: 100%;
+    font-family: light;
+    font-size: 2.4vw;
+    color: var(--white2);
+}

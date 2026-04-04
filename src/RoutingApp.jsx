@@ -12,7 +12,7 @@ const RoutinhApp = () => {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/About' element={<About />} />
-                <Route path='/How-It-Works' element={<How />} />
+                <Route path='/How' element={<How />} />
                 <Route path='/Teen' element={<Teen />} />
 
             </Routes>

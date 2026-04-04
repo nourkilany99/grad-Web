@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
-import './GreenDiv.css';
-import TitleWhite from '../common/TitleWhite';
-import Why from '../common/Why';
-import sticker from '../Assets/Img/lock.svg';
-import TempCard from '../common/TempCard';
+import './GreenDiv2.css';
 
-const GreenDiv = () => {
+const GreenDiv = (props) => {
     return ( 
         <>
-        <div className='green_div'>
-            <TitleWhite title='Core Values' />
-            <div className='tempcards'>
-            <TempCard bgColor=' rgb(248, 230, 234)' header='1. Safety First' sticker={sticker} head2="Protection is the foundation of every system feature." />
-            <TempCard bgColor=' rgb(248, 230, 234)' header='2. Transparency' sticker={sticker} head2="Clear payments, visible ratings, defined processes." />
-            <TempCard bgColor=' rgb(248, 230, 234)' header='3.Opportunity with Structure' sticker={sticker} head2="Independence should exist within safe boundaries." />
+        <div className='green2_div'>
+
+            <div className='green2_head'>
+            <p className='green2_title'>{props.title}</p>
+            <p className='green2_subtitle'>{props.subtitle}</p>
+            </div>
+
+            <div className='green2_cntnt'>
+                <img src={props.sticker} alt='' className='green2_img' />
+                <div className='green2_ps'>
+                    <li>{props.li1}</li>
+                    <li>{props.li2}</li>
+                    <li>{props.li3}</li>
+                    <li>{props.li4}</li>
+                    <li>{props.li5}</li>
+                </div>
             </div>
         </div>
         </>

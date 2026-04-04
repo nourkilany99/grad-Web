@@ -8,7 +8,13 @@ import icon from '../Assets/Img/sticker2.svg';
 import Headers from '../common/Headers';
 import rate_sol from '../Assets/Img/rate_sol.svg';
 import Skillcard from '../common/Skill_card';
-import GreenDiv from '../common/GreenDiv';
+import GreenDiv2 from '../common/GreenDiv2';
+import sticker from '../Assets/Img/lock.svg';
+import DownloadTag from '../common/DownloadTag';
+import WalkThrough from '../common/WalkThrough';
+import mobile from '../Assets/Img/walkmobile.svg';
+import WalkTitle from '../common/WalkTitle';
+
 
 const Teens = () => {
     return ( 
@@ -47,8 +53,20 @@ const Teens = () => {
 
         </div>
 
-        <GreenDiv />
+        <GreenDiv2 title='Earning Safely' subtitle='Your safety comes first.' sticker={sticker} li1='All users are verified before access' li2='No anonymous accounts' li3='Secure in-app messaging only' li4='Payments secured before work begins' li5='Report issues instantly if needed' />
+        <DownloadTag />
 
+        <div className='WalkThrough'>
+        <WalkTitle title='App Walkthrough' />
+        <div className='walks'>
+        <WalkThrough  no='1.' wayImg={mobile} details='Login or Sign up'  />
+        <WalkThrough  no='2.' wayImg={mobile} details='Login or Sign up'  />
+        <WalkThrough  no='3.' wayImg={mobile} details='Login or Sign up'  />
+        <WalkThrough  no='4.' wayImg={mobile} details='Login or Sign up'  />
+        <WalkThrough  no='1.' wayImg={mobile} details='Login or Sign up'  />
+        </div>
+        </div>
+            
         </>
      );
 }
