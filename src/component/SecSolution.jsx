@@ -10,7 +10,7 @@ const SecSolution = (props) => {
             <section className='s_teens_hero'>
                 <img src={solution} alt='' className='solution_img' />
                 <p className='solution_p'>{props.to}</p>
-                <p className='solution_p2'>{props.p}</p>
+                <p className='solution_p2' style={props.pStyle}>{props.p}</p>
             </section>
         </>
      );

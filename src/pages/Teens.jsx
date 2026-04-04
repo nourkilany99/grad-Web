@@ -21,11 +21,13 @@ const Teens = () => {
         <>
         <Nav />
 
-        <SecSolution to='Teens' p="Eureka gives you real opportunities to earn money, gain experience, and build responsibility — all inside a verified and protected platform." />
+        <SecSolution to='Teens' p="Eureka gives you real opportunities to earn money, gain experience, and build responsibility — all inside a verified and protected platform." pStyle={{ marginTop: "2%" }} />
         <img src={decor_sol} alt='' className='decor_sol' />
 
         <div className='s2_sol'>
-            <headers header="Benefits" />
+            <div className='ben2-div'>
+            <Headers header="Benefits" />
+            </div>
             <div className='cardsol_div'>
                 <Cardsol bgColor="#FFECF5" icon={icon} p='Earn money through flexible local tasks' />
                 <Cardsol bgColor="#ecfffb" icon={icon} p='Earn money through flexible local tasks' />

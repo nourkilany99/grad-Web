@@ -10,7 +10,9 @@ const Mission = (props) => {
         <div className='box_line1'>
             <p>{props.p1}</p>
             <p className='line1_bold'>{props.p2}</p>
-            <img src={props.stick1} alt='lock' /> 
+            {props.stick1 && (
+             <img src={props.stick1} alt='' className='img_stick' />
+            )}
             <p>{props.p3}</p>
         </div>
         <div className='box_line1'>
@@ -18,7 +20,10 @@ const Mission = (props) => {
         </div>
         <div className='box_line1'>
             <p className='line2_bold'>{props.p5}</p>
-            <img src={props.stick2} alt='connect' />
+            {props.stick1 && (
+             <img src={props.stick2} alt='connect' className='img_stcick' />
+            )}
+            
             <p>{props.p6}</p>
             <p>{props.p7}</p>
         </div>
