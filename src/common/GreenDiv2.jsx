@@ -4,7 +4,7 @@ import './GreenDiv2.css';
 const GreenDiv = (props) => {
     return ( 
         <>
-        <div className='green2_div'>
+        <div className='green2_div' style={{ margin: props.margin }}>
 
             <div className='green2_head'>
             <p className='green2_title'>{props.title}</p>

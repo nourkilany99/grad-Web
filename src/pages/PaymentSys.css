@@ -1,0 +1,66 @@
+.s1_pay{
+    width: 80%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+.s1_pay_d1{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+    flex-direction: column;
+    font-family: light;
+    color: var(--white2);
+    font-size: 1.4vw;
+}
+
+.s1_pay_d2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 5px;
+    align-items: center;
+}
+
+.s1_pay_d2_p_d{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin: 2% 0 0 0;
+}
+
+.s1_pay_d2_p{
+    font-family: luicy;
+    font-size: 2vw;
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 1% 2%;
+    font-weight: 100;
+    word-spacing: 2%;
+    border-radius: 25px;
+}
+
+.s1_payment_cards{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    margin: 2% 0 5% 0 ;
+}
+
+.s2_pay{
+    width: 80%;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

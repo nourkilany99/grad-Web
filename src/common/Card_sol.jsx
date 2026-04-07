@@ -5,7 +5,7 @@ import './Card_sol.css';
 const Card_sol = (props) => {
     return ( 
         <>
-        <div className='card_sol' style={{ backgroundColor: props.bgColor  }}>
+        <div className='card_sol' style={{ backgroundColor: props.bgColor , width: props.width }}>
             <img src={props.icon} alt='icon' />
             <p>{props.p}</p>
         </div>

@@ -1,0 +1,68 @@
+.payment-section {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: reg;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+.payment-title {
+  font-size: 2vw;
+  font-family: reg;
+  padding: 5% 0;
+}
+
+/* Layout */
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Each step */
+.step {
+  position: relative;
+  width: 180px;
+  text-align: center;
+}
+
+/* Circle */
+.circle {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  /* background: #111; */
+}
+
+.circle img {
+  width: 60%;
+  height: auto;
+}
+
+/* Text */
+.step p {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+/* SVG curved connector */
+.connector {
+  position: absolute;
+  top: -45px;   /* controls height of curve */
+  left: 70%;    /* controls horizontal placement */
+  width: 140px;
+  height: 70px;
+  pointer-events: none;
+}
