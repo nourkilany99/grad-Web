@@ -12,7 +12,7 @@ const GreenDiv = (props) => {
             </div>
 
             <div className='green2_cntnt'>
-                <img src={props.sticker} alt='' className='green2_img' />
+                <img src={props.sticker} alt='' className='green2_img' style={{ width: props.width ,padding: props.padding }} />
                 <div className='green2_ps'>
                     <li>{props.li1}</li>
                     <li>{props.li2}</li>

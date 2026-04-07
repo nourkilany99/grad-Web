@@ -4,7 +4,8 @@ import './Skill_card.css';
 const Skill_card = (props) => {
     return ( 
         <>
-        <div className='skill_sol' style={{ backgroundColor: props.bgColor , width:props.width  }}>
+        <div className='skill_sol' style={{ backgroundColor: props.bgColor , width:props.width , padding:props.padding }}>
+        <img src={props.icon} alt='' />
         <p>{props.skill}</p>
         </div>
         </>

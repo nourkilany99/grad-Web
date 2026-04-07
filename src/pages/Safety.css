@@ -1,0 +1,205 @@
+.s1_safe{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.safety_hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: bold;
+    font-size: 10vw;
+    color: var(--white);
+    margin-top: 5vw;
+    flex-direction: column;
+    margin-left: 5vw;
+}
+
+.and_hero{
+    color: var(--pink);
+    font-family: decor;
+    font-size: 28vw;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 10vw;
+}
+
+.safety_p{
+    margin-top: 0vw;
+    margin-left: -30vw; 
+} 
+
+.trust_p{
+    margin-top: 5vw;
+    margin-right: -42vw; 
+}
+
+.design_safe{
+    width: 30%;
+    position: absolute;
+    margin-top: 13%;
+    margin-left: -25%;
+}
+
+.safety_long_p_hero{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    font-family: light;
+    color: var(--white2);
+    line-height: 140%;
+    font-size: 1.5vw;
+    position: absolute;
+    margin-left: -20vw;
+    margin-top: 40vw;
+}
+
+.s2_safe{
+    width: 90%;
+    margin: 10% 5% 0 5% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#1E1E1E ;
+}
+
+.s2_safe_titles{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.s2_safe_h{
+    font-family: luicy;
+    color: var(--white);
+    font-size: 2.3vw;
+    background-color: var(--main-color);
+    padding: 1% 5%;
+    border-radius: 25px;
+    margin-top: -2%;
+}
+
+.s2_safe_p{
+    font-family: reg;
+    font-size: 1.2vw;
+    color: var(--white2);
+    padding: 2% 0;
+}
+
+.s2_safe_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 102%;
+    gap: 10px;
+}
+
+.s2_hint_div{
+    color: rgba(255, 255, 255, 0.213);
+    font-family: light;
+    font-size: 1vw;
+    padding: 3% 0;
+}
+
+.s3_safe{
+    width: 90%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.s3_safe_hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s3_safe_hero_d1{
+    width: 60%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.s3_safe_hero_title{
+    font-family: reg;
+    color: var(--white);
+    font-size: 2vw;
+}
+
+.s3_safe_hero_p{
+    color: var(--white2);
+    font-size: 1.1vw;
+    font-family: light;
+}
+
+.s3_safe_hero_d2{
+    width: 10%;
+}
+
+.s3_safe_hero_decor{
+    width: 100%;
+}
+
+.safety_crds{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+.contact_rate_crds{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15%;
+    position: relative;
+}
+
+.contact_pix{
+    width: 30%;
+    position: absolute;
+    /* top: 20; */
+    margin-top: -20%;
+}
+
+.contact_sol{
+    width: 100%;
+    background-image: url(../Assets/Img/design_sides.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    /* margin-top: 5%; */
+    position: relative;
+}
+
+.skill_contact_cntnt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.head_s3_contact{
+    width: 90%;
+    padding:  5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
