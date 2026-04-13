@@ -8,6 +8,7 @@ import Parents from './pages/Parents';
 import TaskOwner from './pages/Taskowner';
 import Safety from './pages/Safety';
 import Payment from './pages/PaymentSys';
+import Contact from './pages/Contact';
 
 const RoutinhApp = () => {
     return ( 
@@ -22,6 +23,7 @@ const RoutinhApp = () => {
                 <Route path='/TaskOwner' element={<TaskOwner />} />
                 <Route path='/safety' element={<Safety />} />
                 <Route path='/payment' element={<Payment />} />
+                <Route path='/contact' element={<Contact />} />
 
             </Routes>
 

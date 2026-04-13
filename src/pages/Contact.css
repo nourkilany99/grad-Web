@@ -1,0 +1,230 @@
+
+.s1_safe{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+.contact_hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: bold;
+    font-size: 10vw;
+    color: var(--white);
+    margin-top: 2vw;
+    flex-direction: column;
+}
+.and_hero2{
+    color: var(--pink);
+    font-family: decor;
+    font-size: 28vw;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: -1vw; 
+}
+.contact_p{
+    margin-top: 0vw;
+    margin-left: -38vw; 
+} 
+
+.support_p{
+    margin-top: 5vw;
+    margin-right: -40vw; 
+}
+
+.pink_line_contact{
+    width: 100%;
+}
+
+.pink_d_contact{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_long_p_hero{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    font-family: light;
+    color: rgba(255, 255, 255, 0.526);
+    line-height: 140%;
+    font-size: 1.3vw;
+    padding: 3% 0;
+}
+
+.s2_contact{
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s2_contact_info1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+
+}
+
+.s2_chat_info1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 3% 0;
+}
+
+.s2_chat_title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    color: var(--main-color);
+    font-size: 1.5vw;
+    font-family: semi;
+}
+
+.chatIcon{
+    width: 2vw;
+}
+
+.Iconp1{
+    color: var(--white2);
+    font-size: 1.2vw;
+    font-family: light;
+    padding: 2% 0;
+}
+.Iconp2{
+    color: var(--white);
+    font-size: 1.3vw;
+    font-family: semi;
+}
+
+.s2_fqa_title{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    color: var(--main-color);
+    font-family: semi;
+    border-bottom:solid 1px var(--main-color);
+    font-size: 1.5vw;
+    padding-bottom: 2%;
+}
+
+.form{
+    width: 60%;
+    background-image: url(../Assets//Img/contactformIMG.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 5% ;
+}
+
+.contact_form_wrap{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 20%;
+}
+
+.contact_form_title{
+    color: var(--white);
+    font-family: bold;
+    font-size: 3.2vw;
+    text-transform: uppercase;
+    margin-bottom: 0.8vw;
+}
+
+.contact_form_subtitle{
+    color: var(--white2);
+    font-family: light;
+    font-size: 1.4vw;
+    margin-bottom: 2.5vw;
+}
+
+.contact_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3vw;
+}
+
+.contact_form_row{
+    width: 100%;
+    display: flex;
+    gap: 1.5vw;
+}
+
+.contact_form input,
+.contact_form textarea,
+.contact_form select{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    color: var(--white);
+    font-family: light;
+    font-size: 1.35vw;
+    padding: 0.6vw 0;
+    outline: none;
+}
+
+.contact_form input::placeholder,
+.contact_form textarea::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact_label{
+    color: var(--white);
+    font-family: semi;
+    font-size: 1.5vw;
+    margin-top: 0.5vw;
+}
+
+.contact_user_type{
+    max-width: 12vw;
+    border: 1px dashed rgba(255, 255, 255, 0.4) !important;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.4) !important;
+    padding: 0.7vw 1vw !important;
+    cursor: pointer;
+}
+
+.contact_user_type option{
+    color: #1a1a1a;
+}
+
+.contact_message{
+    resize: none;
+}
+
+.contact_submit{
+    width: 100%;
+    border: none;
+    background: rgba(14, 26, 32, 0.4);
+    color: var(--main-color);
+    font-family: semi;
+    font-size: 1.4vw;
+    padding: 0.9vw 0;
+    margin-top: 1.2vw;
+    cursor: pointer;
+}
