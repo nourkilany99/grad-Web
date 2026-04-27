@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Safety.css';
-import Nav from '../component/Nav';
 import design_safe from '../Assets/Img/designSafety.svg' ;
 import Cardsol from '../common/Card_sol';
 import icon from '../Assets/Img/done_icon.svg';
@@ -19,8 +18,6 @@ import secure_inchat from '../Assets/Img/secure_inchat.svg'
 const Safety = () => {
     return ( 
         <>
-        <Nav />
-        
         <section className='s1_safe'>
         <div className='safety_hero'>
             <p className='safety_p'>Safety</p>

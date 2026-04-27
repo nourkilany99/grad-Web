@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Taskowner.css';
-import Nav from '../component/Nav';
 import SecSolution from '../component/SecSolution';
 import decor_sol from '../Assets/Img/decor_sol.svg';
 import Cardsol from '../common/Card_sol'
@@ -17,7 +16,6 @@ import mobile from '../Assets/Img/walkmobile.svg';
 const Taskowner = () => {
     return ( 
         <>
-        <Nav />
         <SecSolution to={<>Task <br /> owners</>} p="Eureka gives you real opportunities to earn money, gain experience, and build responsibility — all inside a verified and protected platform." pStyle={{ marginTop: "10%" , marginRight:"-55%" }}/>
         <img src={decor_sol} alt='' className='decor_sol' />
 

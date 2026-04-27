@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './About.css';
-import Nav from '../component/Nav';
 import Sticker1 from '../Assets/Img/sticker2.svg';
 import Sticker2 from '../Assets/Img/decor_Logo.svg';
 import line_about from '../Assets/Img/decor_line_about.svg';
@@ -24,8 +23,6 @@ import taregt2 from '../Assets/Img/target2.svg';
 const About = () => {
     return ( 
         <>
-        <Nav />
-        
         <div className='s1_about'>
             <div className='text_about_div'>
             <p className='about_p1'>About</p>

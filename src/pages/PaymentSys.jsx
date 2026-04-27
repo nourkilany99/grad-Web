@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './PaymentSys.css';
-import Nav from '../component/Nav';
 import Headers from '../common/Headers';
 import Cardsol from '../common/Card_sol';
 import icon from '../Assets/Img/done_icon.svg';
@@ -12,8 +11,6 @@ import PaymentProcess from '../component/PaymentProcess';
 const PaymentSys = () => {
     return ( 
         <>
-        <Nav/>
-
         <section className='s1_pay'>
         <div className='s1_pay_d1'>
             <Headers header='Payment System' />

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Teens.css';
-import Nav from '../component/Nav';
 import SecSolution from '../component/SecSolution';
 import decor_sol from '../Assets/Img/decor_sol.svg';
 import Cardsol from '../common/Card_sol';
@@ -19,8 +18,6 @@ import WalkTitle from '../common/WalkTitle';
 const Teens = () => {
     return ( 
         <>
-        <Nav />
-
         <SecSolution to='Teens' p="Eureka gives you real opportunities to earn money, gain experience, and build responsibility — all inside a verified and protected platform." pStyle={{ marginTop: "2%" }} />
         <img src={decor_sol} alt='' className='decor_sol' />
 

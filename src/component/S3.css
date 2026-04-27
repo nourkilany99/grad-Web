@@ -29,18 +29,17 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     gap: 5vw;
     overflow: hidden;
-
-
     gap: 10px;
     height: 70%;
     align-items: center;
     will-change: transform;
+    width: max-content;
+    margin-left: 15%;
+    margin-top: 2%;
 
-
-    width: max-content; /* 🔥 IMPORTANT */
 }
 
 .sticky {

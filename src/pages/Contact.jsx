@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Contact.css';
-import Nav from '../component/Nav';
 import pink_line from '../Assets/Img/decor_line_about.svg';
 import chatIcon from '../Assets/Img/chatIcon.svg';
 import callIcon from '../Assets/Img/callIcon.svg';
@@ -10,8 +9,6 @@ import fqaIcon from '../Assets/Img/fqaIcon.svg';
 const Contact = () => {
     return ( 
         <>
-        <Nav />
-
         <section className='s1_safe'>
         <div className='contact_hero'>
             <p className='contact_p'>Contact</p>

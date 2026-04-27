@@ -1,17 +1,13 @@
 import React, { Component, useEffect, useState } from 'react';
 import './Home.css';
-import Nav from '../component/Nav';
-import done from '../Assets/Img/done_icon.svg';
-import decor_hero from '../Assets/Img/decorHero.svg';
-import line_green from '../Assets/Img/line.svg'
 import DownloagTag from '../common/DownloadTag';
 import How from '../common/How';
 import Headers from '../common/Headers';
 import { supabase } from '../Supabase';
 import Section3 from '../component/Section3';
-import Sticker_verify from '../Assets/Img/identy_stick.svg';
 import OnBtns from '../common/OnBtns'
 import OffBtn from '../common/OffBtn';
+import Footer from './Footer';
 import user_feed_img from '../Assets/Img/user_feed_img1.svg';
 import rate from '../Assets/Img/rate.svg';
 import Feedback from '../common/Feedback';
@@ -20,23 +16,54 @@ import next_icon from '../Assets/Img/next_icon.svg';
 import logo from '../Assets/Img/greenlogo.svg';
 import loc_icon from '../Assets/Img/loc.svg';
 import grp_loc from '../Assets/Img/GroupLoc.svg';
+import { Link} from "react-router-dom";
+
 
 
 const Home = () => {    
     const [loading, setLoading] = useState(true);
+    const [home_stats, sethome_stats] = useState([]);
+    const [home_hero, sethome_hero] = useState([]);
+    const [home_stats2, sethome_stats2] = useState([]);
+    const [challenge_section, setchallenge_section] = useState([]);
+    const [challenge_cards, setchallenge_cards] = useState([]);
+    const [safety_cards, setsafety_cards] = useState([]);
+    const [feedback, setfeedback] = useState([]);
+    const [features, setfeatures] = useState([]);
+    
+    
+    
+    
 
 
     useEffect(()=>{
         
             async function getPageData(){
+            const home_stats_res = await supabase.from("home_stats").select("*");
+            const home_hero_res = await supabase.from("home_hero").select("*");
+            const home_stats2_res = await supabase.from("home_stats2").select("*");
+            const challenge_section_res = await supabase.from("challenge_section").select("*");
+            const challenge_cards_res = await supabase.from("challenge_cards").select("*");
+            const safety_cards_res = await supabase.from("safety_cards").select("*");
+            const feedback_res = await supabase.from("feedback").select("*");
+            const features_res = await supabase.from("features").select("*");
+
+            sethome_stats(home_stats_res.data);
+            sethome_hero(home_hero_res.data);
+            sethome_stats2(home_stats2_res.data);
+            setchallenge_section(challenge_section_res.data);
+            setchallenge_cards(challenge_cards_res.data);
+            setsafety_cards(safety_cards_res.data);
+            setfeedback(feedback_res.data);
+            setfeatures(features_res.data);
            
     
-                setLoading(false);
-                }
+            setLoading(false);
+            }
                 
-                getPageData()
+            getPageData()
         
-                },[])
+            },[])
     
     if (loading) return <p>Loading....</p>;
         
@@ -44,42 +71,79 @@ const Home = () => {
     return ( 
     <>
     <section className='s1'>
-        <Nav/>
+        {/* <Nav/> */}
 
         <div className='s1-cntnt'>
 
             <div className='left-s1'>
 
                 <div className='left-s1-d1'>
-                <img src={done} alt='done_icon' className='icon_done' />
-                <h1>Task done</h1>
+                {home_stats.map((item) => (
+                <img src={item.icon} alt='done_icon' className='icon_done' />
+                ))}
+    
+
+                {home_stats.map((item) => (
+                <h1 key={item.id}>{item.label}</h1>
+                ))}
+                
                 </div>
 
-            <p className='left-p'>25,000</p>
+                {home_stats.map((item) => (
+                <p className='left-p'>{item.value}</p>
+                ))}
+
             </div>
 
             <div className='right-s1'>
 
-            <p className='right-p'>Safety</p>
-            <p className='right-p'>Verification </p>
-            <p className='right-p'>Honest Rating</p>
+               {home_stats2.map((item) => (
+               <p className='right-p'>{item.label1}</p>
+               ))}
 
+              {home_stats2.map((item) => (
+                <p className='right-p'>{item.label2}</p>
+              ))}
+
+              {home_stats2.map((item) => (
+                <p className='right-p'>{item.label3}</p>
+              ))}
+
+        
             </div>
         </div>
 
         <div className='middle-s1'>
 
                 <div className='middle-s1-part1'>
-                    <img src={decor_hero} alt='decor_hero' className='decor_hero' />
+                    {home_hero.map((item) => (
+                     <img src={item.background_image} alt='decor_hero' className='decor_hero' />
+                    ))}
+                    
                     <div className='hero_text1' >
-                    <h1 className='decor_text_hero'>Earn</h1>
-                    <h1 className='text_hero'>Money.</h1>
-                    <h1 className='text_hero2'>Gain</h1>
+
+                    {home_hero.map((item) => (
+                     <h1 className='decor_text_hero'>{item.line1}</h1>
+                    ))}
+
+                    {home_hero.map((item) => (
+                     <h1 className='text_hero'>{item.line2}</h1>
+                    ))}
+
+
+                    {home_hero.map((item) => (
+                     <h1 className='text_hero2'>{item.line3}</h1>
+                    ))}
+        
+                    
                     </div>
                 </div>
 
                 <div className='middle-s1-part2'>
-                    <h1 className='text_hero_part2'>Experience</h1>
+                    {home_hero.map((item) => (
+                      <h1 className='text_hero_part2'>{item.line4}</h1>
+                    ))}
+                   
                 </div>
 
         </div>
@@ -96,20 +160,49 @@ const Home = () => {
         <div className='chalenge-sec'>
 
             <div className='chalenge-sec-d1'>
-                <Headers header='Challenge' />
-                {/* <h2 className='chal_p'>Challenge</h2> */}
-                <p className='chal_p2'>Teenagers today are eager to earn money, 
-                gain experience, and build independence — 
-                yet most available opportunities are informal, unverified, and risky.
-                At the same time, adults need reliable help with everyday tasks but 
-                hesitate to trust unknown individuals without proper accountability. </p>
+
+                {challenge_section
+                .filter(item => item.id === 1)
+                .map((item) => (
+                <Headers header={item.title} />
+                ))}
+
+                {challenge_section
+                .filter(item => item.id === 1)
+                .map((item) => (
+                <p className='chal_p2'>{item.description}</p>
+                ))}
+
+
             </div>
 
             <div className='chalenge-sec-d2'>
-                <p className='chal_card1'>1.Informal & Unstructured Opportunities</p>
-                <p className='chal_card2'>2.Lack of Identity Verification</p>
-                <p className='chal_card3'>3.Unprotected Payments</p>
-                <p className='chal_card4'>4.No Accountability System</p>
+
+                {challenge_cards
+                .filter(item => item.id === 1)
+                .map((item) => (
+                <p className='chal_card1'>{item.text}</p>
+                ))}
+
+
+                {challenge_cards
+                .filter(item => item.id === 2)
+                .map((item) => (
+                <p className='chal_card2'>{item.text}</p>
+                ))}
+
+                {challenge_cards
+                .filter(item => item.id === 3)
+                .map((item) => (
+                <p className='chal_card3'>{item.text}</p>
+                ))}
+
+                {challenge_cards
+                .filter(item => item.id === 4)
+                .map((item) => (
+                <p className='chal_card4'>{item.text}</p>
+                ))}
+
             </div>
 
         </div>
@@ -137,28 +230,63 @@ const Home = () => {
 
         <div className='safety_cards'>
             <div className='safety_cards_d1'>
-                <div className='safety_cards1'>
-                    <h1 className='safety_cards1_h'>Identity Verification System</h1>
-                    <img src={Sticker_verify} alt='Sticker_verify' />
-                    <p className='safety_cards1_p'>A mandatory multi-step identity verification system ensures every user is real, traceable, and accountable before accessing the platform.</p>
-                </div>
+            <div className='safety_cards1'>
 
-                 <div className='safety_cards2'>
-                    <h1 className='safety_cards1_h'>Protected Payment System</h1>
-                    <p className='safety_cards1_p'>A secure escrow-based payment system holds funds safely until task completion, protecting both effort and money.</p>
+            {safety_cards
+            .filter(item => item.id === 1)
+            .map((item) => (
+             <div key={item.id}>
+             <h1 className='safety_cards1_h'>{item.title}</h1>
+ 
+            {item.image && (
+              <img src={item.image} alt={item.title} />
+            )}
+
+            <p className='safety_cards1_p'>{item.description}</p>
+            </div>
+            ))
+            }
+
+            </div>
+
+            <div className='safety_cards2'>
+            {safety_cards
+            .filter(item => item.id === 2)
+            .map((item) => (
+             <div key={item.id}>
+             <h1 className='safety_cards1_h'>{item.title}</h1>
+             <p className='safety_cards1_p'>{item.description}</p>
+            </div>
+            ))
+            }
+                    
                 </div>
             </div>
 
             <div className='safety_cards_d2'>
-                <div className='safety_cards3'>
-                    <h1 className='safety_cards1_h'>Identity Verification System</h1>
-                    <p className='safety_cards1_p'>A mandatory multi-step identity verification system ensures every user is real, traceable, and accountable before accessing the platform.</p>
-                </div>
+            <div className='safety_cards3'>
+            {safety_cards
+            .filter(item => item.id === 3)
+            .map((item) => (
+            <div key={item.id}>
+             <h1 className='safety_cards1_h'>{item.title}</h1>
+             <p className='safety_cards1_p'>{item.description}</p>
+            </div>
+            ))
+            }
+            </div>
 
-                 <div className='safety_cards4'>
-                    <h1 className='safety_cards1_h'>Rating & Accountability System</h1>
-                    <p className='safety_cards1_p'>A transparent rating and accountability system tracks performance, builds reputation, and reinforces responsible behavior across the platform.</p>
-                </div>
+            <div className='safety_cards4'>
+            {safety_cards
+            .filter(item => item.id === 4)
+            .map((item) => (
+            <div key={item.id}>
+             <h1 className='safety_cards1_h'>{item.title}</h1>
+             <p className='safety_cards1_p'>{item.description}</p>
+            </div>
+            ))
+            }
+            </div>
             </div>
         </div>
 
@@ -173,9 +301,18 @@ const Home = () => {
         </div>
         
         <div className='feed_opinion_div'>
-        <Feedback Img={user_feed_img} numberTask="20+ tasks" name='Jana Hatem' numberRate='4.6'  age='18 years old' rate={rate} feed='The verification system made me feel comfortable accepting tasks.' />
-        <Feedback Img={user_feed_img} numberTask="20+ tasks" name='Jana Hatem' numberRate='4.6'  age='18 years old' rate={rate} feed='The verification system made me feel comfortable accepting tasks.' />
-        <Feedback Img={user_feed_img} numberTask="20+ tasks" name='Jana Hatem' numberRate='4.6'  age='18 years old' rate={rate} feed='The verification system made me feel comfortable accepting tasks.' />
+        {feedback.map((item) => (
+        <Feedback
+        key={item.id}
+        Img={item.image || user_feed_img}
+        numberTask={item.tasks_count}
+        name={item.name}
+        numberRate={item.rating}
+        age={item.age}
+        rate={rate}
+        feed={item.text}
+        />
+        ))}
         </div>
 
         <div className='bck-nxt-div'>
@@ -191,18 +328,36 @@ const Home = () => {
             <img src={logo} alt='logo' className='logo_feat' />
             <p className='head_s6_h'>Top features</p>
             <div className='div1_s6_loc'>
-                <img src={loc_icon} alt='loc_icon' className='loc_icon' />
-                <p>Smart Task Matching</p>
+            {features
+            .map((item) => (
+            <div key={item.id}>
+                 <img src={item.icon} alt='loc_icon' className='loc_icon' />
+                 <p>{item.title}</p>
             </div>
-            <p className='p_loc'>Location-based discovery and filtering connect the right people efficiently.</p>
-            <p className='Explore_btn'>Explore features</p>
+            ))
+            }
             </div>
-            <div className='div2_s6'>
+
+            {features
+            .map((item) => (
+            <div>
+            <p className='p_loc'>{item.description}</p>
+            <Link className='a' to="/features">
+            <p className='Explore_btn'>{item.cta_link}</p>
+            </Link>
+            </div>
+            ))
+            }
+        
+        </div>
+        <div className='div2_s6'>
                 <img src={grp_loc} alt='grp_loc' className='' />
-            </div>
+        </div>
         </div>
     </section>
 
+    <Footer />
+    
     
 
     </> 

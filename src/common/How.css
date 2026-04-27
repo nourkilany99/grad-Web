@@ -1,5 +1,5 @@
 .how_card{
-    width: 80%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -8,7 +8,7 @@
 }
 
 .how_card_img{
-    width: 30%;
+    width: 21%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
 }
 
 .card_img{
-    width: 100%;
+    width: 85%;
     display:flex;
     align-items: center;
     justify-content: center;

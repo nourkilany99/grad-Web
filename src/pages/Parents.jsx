@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Parents.css';
-import Nav from '../component/Nav';
 import SecSolution from '../component/SecSolution';
 import decor_sol from '../Assets/Img/decor_sol.svg';
 import decor_about from '../Assets/Img/decor_mission.svg';
@@ -17,7 +16,6 @@ import mobile from '../Assets/Img/walkmobile.svg';
 const Parents = () => {
     return ( 
         <>
-        <Nav />
         <SecSolution to='Parents' p="Eureka gives you real opportunities to earn money, gain experience, and build responsibility — all inside a verified and protected platform." pStyle={{ marginTop: "1%" , marginRight:"-60%" }}/>
         <img src={decor_sol} alt='' className='decor_sol' />
 

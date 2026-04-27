@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './How.css';
-import Nav from '../component/Nav';
 import logo from '../Assets/Img/decor_Logo.svg';
 import pink_line from '../Assets/Img/pink_line.svg';
 import GroupHow from '../Assets/Img/GroupHow.svg';
@@ -11,8 +10,6 @@ import Steps from '../common/Steps';
 const How = () => {
     return ( 
         <>
-        <Nav />
-
         <section className='hero_how'>
             <p className='eureka_how'>Eureka</p>
             <div className='how_p_div'>

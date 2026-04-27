@@ -2,24 +2,32 @@ import React, { useEffect, useState } from "react";
 import './S3.css';
 import { supabase } from '../Supabase';
 import How from '../common/How';
-import line_green from '../Assets/Img/line.svg'
+import line_green from '../Assets/Img/line.svg';
 
 const Section3 = () => {
   const [how, sethow] = useState([]);
 
   useEffect(() => {
 
-    async function getPageData(){
-      const howres = await supabase.from("How_Work").select("*");
-      sethow(howres.data);
+    async function getPageData() {
+      const { data, error } = await supabase
+        .from("How_Work")
+        .select("*")
+        .order("id", { ascending: true });
+
+      if (!error) {
+        sethow(data || []);
+      }
     }
 
-    getPageData(); // ✅ CALL IT HERE
+    getPageData();
 
     const section = document.querySelector(".s3");
     const track = document.querySelector("#howScroll");
 
     const handleScroll = () => {
+      if (!section || !track) return;
+
       const rect = section.getBoundingClientRect();
       const scrollProgress = -rect.top;
 
@@ -48,45 +56,14 @@ const Section3 = () => {
         </div>
 
         <div className='how_cntnt' id="howScroll">
-          {
-            how
-            .filter(how => how.id === 1)
-            .map((how)=>{
-            return  <>
-            <How Img={how.Img} number={how.Number} how={how.How}/>
-            </>
-            })
-          }
-
-          {
-            how
-            .filter(how => how.id === 2)
-            .map((how)=>{
-            return  <>
-            <How Img={how.Img} number={how.Number} how={how.How}/>
-            </>
-            })
-          }
-
-          {
-            how
-            .filter(how => how.id === 1)
-            .map((how)=>{
-            return  <>
-            <How Img={how.Img} number={how.Number} how={how.How}/>
-            </>
-            })
-          }
-
-          {
-            how
-            .filter(how => how.id === 1)
-            .map((how)=>{
-            return  <>
-            <How Img={how.Img} number={how.Number} how={how.How}/>
-            </>
-            })
-          }
+          {how.map((item) => (
+            <How
+              key={item.id}
+              Img={item.Img}
+              number={item.Number}
+              how={item.How}
+            />
+          ))}
         </div>
       </div>
     </section>
