@@ -21,6 +21,12 @@ body{
     src: url(fonts/Luicy-Regular\ Demo.ttf);
 }
 
+@font-face {
+    font-family: muna;
+    font-weight: 100;
+    src: url(fonts/alfont_com_Muna.ttf)
+}
+
 
 
 @font-face {

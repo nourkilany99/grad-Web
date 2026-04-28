@@ -167,3 +167,10 @@ nav{
     backdrop-filter: blur(10px);
     box-shadow: 0 0 20px #2b2b2b;
 }
+
+header.arabic-mode nav,
+header.arabic-mode .a,
+header.arabic-mode .a2,
+header.arabic-mode .cta-download p {
+    font-family: muna;
+}

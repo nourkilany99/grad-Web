@@ -52,6 +52,7 @@ const Nav = () => {
   const [loading, setLoading] = useState(true);
   const [nav, setnav] = useState([]);
   const [buttons, setbuttons] = useState([]);
+  const [isArabic, setIsArabic] = useState(false);
 
   useEffect(() => {
     async function getPageData() {
@@ -66,10 +67,15 @@ const Nav = () => {
     getPageData();
   }, []);
 
+  const getLabel = (item) => {
+    if (!item) return "";
+    return isArabic ? (item.label_ar || item.label_en) : (item.label_en || item.label_ar);
+  };
+
   if (loading) return <p>Loading....</p>;
 
   return ( 
-    <header >
+    <header className={isArabic ? "arabic-mode" : ""}>
 
       {/* Logo */}
       
@@ -88,7 +94,7 @@ const Nav = () => {
             nav 
             .filter(item => item.id === 3)
             .map(item => (
-              <p className='a' key={item.id}>{item.label_en}</p>
+              <p className='a' key={item.id}>{getLabel(item)}</p>
             ))
           }
         </Link>
@@ -98,32 +104,51 @@ const Nav = () => {
             nav 
             .filter(item => item.id === 15)
             .map(item => (
-              <p className='a' key={item.id}>{item.label_en}</p>
+              <p className='a' key={item.id}>{getLabel(item)}</p>
             ))
           }
         </Link>
 
         {/* ✅ For Users Dropdown */}
         <Dropdown className='a'
-          label={nav.find(item => item.id === 4)?.label_en}
-          links={[
-            { label: "For Teens", path: "/Teen" },
-            { label: "For Parents", path: "/Parents" },
-            { label: "For Task Owners", path: "/TaskOwner" }
-          ]}
+          label={getLabel(nav.find(item => item.id === 4))}
+          links={
+            isArabic
+              ? [
+                  { label: "للمراهقين", path: "/Teen" },
+                  { label: "للآباء", path: "/Parents" },
+                  { label: "لأصحاب المهام", path: "/TaskOwner" }
+                ]
+              : [
+                  { label: "For Teens", path: "/Teen" },
+                  { label: "For Parents", path: "/Parents" },
+                  { label: "For Task Owners", path: "/TaskOwner" }
+                ]
+          }
         />
 
         {/* ✅ Verification System Dropdown */}
         <Dropdown className='a'
-          label={nav.find(item => item.id === 7)?.label_en}
-          links={[
-            { label: "safety & trust", path: "/safety" },
-            { label: "Verification system", path: "/verify" },
-            { label: "Payment method", path: "/payment" },
-            { label: "Pricing", path: "/pricing" },
-            { label: "Terms & Conditions", path: "/terms" },
-            // { label: "Check Status", path: "/verification/status" }
-          ]}
+          label={getLabel(nav.find(item => item.id === 7))}
+          links={
+            isArabic
+              ? [
+                  { label: "الأمان والثقة", path: "/safety" },
+                  { label: "نظام التحقق", path: "/verify" },
+                  { label: "طريقة الدفع", path: "/payment" },
+                  { label: "الأسعار", path: "/pricing" },
+                  { label: "الشروط والأحكام", path: "/terms" },
+                  // { label: "تحقق من الحالة", path: "/verification/status" }
+                ]
+              : [
+                  { label: "safety & trust", path: "/safety" },
+                  { label: "Verification system", path: "/verify" },
+                  { label: "Payment method", path: "/payment" },
+                  { label: "Pricing", path: "/pricing" },
+                  { label: "Terms & Conditions", path: "/terms" },
+                  // { label: "Check Status", path: "/verification/status" }
+                ]
+          }
         />
 
         {/* Features */}
@@ -132,19 +157,27 @@ const Nav = () => {
             nav
             .filter(item => item.id === 2)
             .map(item => (
-              <p className='a' key={item.id}>{item.label_en}</p>
+              <p className='a' key={item.id}>{getLabel(item)}</p>
             ))
           }
         </Link>
 
         {/* ✅ Payment System Dropdown */}
         <Dropdown
-          label={nav.find(item => item.id === 14)?.label_en}
-          links={[
-            { label: "contact", path: "/contact" },
-            { label: "reports", path: "/reports" },
-            { label: "FQA", path: "/fqa" }
-          ]}
+          label={getLabel(nav.find(item => item.id === 14))}
+          links={
+            isArabic
+              ? [
+                  { label: "تواصل معنا", path: "/contact" },
+                  { label: "التقارير", path: "/reports" },
+                  { label: "الأسئلة الشائعة", path: "/fqa" }
+                ]
+              : [
+                  { label: "contact", path: "/contact" },
+                  { label: "reports", path: "/reports" },
+                  { label: "FQA", path: "/fqa" }
+                ]
+          }
         />
 
       </nav>
@@ -152,15 +185,27 @@ const Nav = () => {
       {/* CTA Button + Language Switch */}
       <div className='cta-download-div'>
         <div className='language-switch'>
-          <button type='button' className='language-btn'>AR</button>
-          <button type='button' className='language-btn active'>EN</button>
+          <button
+            type='button'
+            className={`language-btn ${isArabic ? "active" : ""}`}
+            onClick={() => setIsArabic(true)}
+          >
+            AR
+          </button>
+          <button
+            type='button'
+            className={`language-btn ${!isArabic ? "active" : ""}`}
+            onClick={() => setIsArabic(false)}
+          >
+            EN
+          </button>
         </div>
         <div className='cta-download'>
           {
             buttons
             .filter(item => item.id === 1)
             .map(item => (
-              <p key={item.id}>{item.label_en}</p>
+              <p key={item.id}>{getLabel(item)}</p>
             ))
           }
         </div>
