@@ -3,6 +3,7 @@ import logo from '../Assets/Img/WhiteLogo.svg';
 import './Nav.css';
 import { supabase } from '../Supabase';
 import { Link, useLocation } from "react-router-dom";
+import { useLanguage } from '../context/LanguageContext';
 
 
 // ✅ Reusable Dropdown
@@ -52,7 +53,8 @@ const Nav = () => {
   const [loading, setLoading] = useState(true);
   const [nav, setnav] = useState([]);
   const [buttons, setbuttons] = useState([]);
-  const [isArabic, setIsArabic] = useState(false);
+  const { lang, setLang } = useLanguage();
+  const isArabic = lang === "ar";
 
   useEffect(() => {
     async function getPageData() {
@@ -188,14 +190,14 @@ const Nav = () => {
           <button
             type='button'
             className={`language-btn ${isArabic ? "active" : ""}`}
-            onClick={() => setIsArabic(true)}
+            onClick={() => setLang("ar")}
           >
             AR
           </button>
           <button
             type='button'
             className={`language-btn ${!isArabic ? "active" : ""}`}
-            onClick={() => setIsArabic(false)}
+            onClick={() => setLang("en")}
           >
             EN
           </button>

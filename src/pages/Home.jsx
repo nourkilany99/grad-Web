@@ -17,6 +17,7 @@ import loc_icon from '../Assets/Img/loc.svg';
 import grp_loc from '../Assets/Img/GroupLoc.svg';
 import { Link} from "react-router-dom";
 import Footer from '../common/Footer';
+import { useLanguage } from '../context/LanguageContext';
 
 
 const Home = () => {    
@@ -29,6 +30,7 @@ const Home = () => {
     const [safety_cards, setsafety_cards] = useState([]);
     const [feedback, setfeedback] = useState([]);
     const [features, setfeatures] = useState([]);
+    const { lang } = useLanguage();
     
     
     
@@ -63,6 +65,11 @@ const Home = () => {
             getPageData()
         
             },[])
+
+    const getLocalized = (item, field) => {
+        if (!item) return '';
+        return item[`${field}_${lang}`] || item[`${field}_en`] || item[`${field}_ar`] || '';
+    };
     
     if (loading) return <p>Loading....</p>;
         
@@ -83,13 +90,13 @@ const Home = () => {
     
 
                 {home_stats.map((item) => (
-                <h1 key={item.id}>{item.label}</h1>
+                <h1 key={item.id}>{getLocalized(item, 'label')}</h1>
                 ))}
                 
                 </div>
 
                 {home_stats.map((item) => (
-                <p className='left-p'>{item.value}</p>
+                <p className='left-p'>{getLocalized(item, 'value')}</p>
                 ))}
 
             </div>
@@ -97,15 +104,15 @@ const Home = () => {
             <div className='right-s1'>
 
                {home_stats2.map((item) => (
-               <p className='right-p'>{item.label1}</p>
+               <p className='right-p'>{getLocalized(item, 'label1')}</p>
                ))}
 
               {home_stats2.map((item) => (
-                <p className='right-p'>{item.label2}</p>
+                <p className='right-p'>{getLocalized(item, 'label2')}</p>
               ))}
 
               {home_stats2.map((item) => (
-                <p className='right-p'>{item.label3}</p>
+                <p className='right-p'>{getLocalized(item, 'label3')}</p>
               ))}
 
         
@@ -122,16 +129,16 @@ const Home = () => {
                     <div className='hero_text1' >
 
                     {home_hero.map((item) => (
-                     <h1 className='decor_text_hero'>{item.line1}</h1>
+                     <h1 className='decor_text_hero'>{getLocalized(item, 'line1')}</h1>
                     ))}
 
                     {home_hero.map((item) => (
-                     <h1 className='text_hero'>{item.line2}</h1>
+                     <h1 className='text_hero'>{getLocalized(item, 'line2')}</h1>
                     ))}
 
 
                     {home_hero.map((item) => (
-                     <h1 className='text_hero2'>{item.line3}</h1>
+                     <h1 className='text_hero2'>{getLocalized(item, 'line3')}</h1>
                     ))}
         
                     
@@ -140,7 +147,7 @@ const Home = () => {
 
                 <div className='middle-s1-part2'>
                     {home_hero.map((item) => (
-                      <h1 className='text_hero_part2'>{item.line4}</h1>
+                      <h1 className='text_hero_part2'>{getLocalized(item, 'line4')}</h1>
                     ))}
                    
                 </div>
@@ -163,13 +170,13 @@ const Home = () => {
                 {challenge_section
                 .filter(item => item.id === 1)
                 .map((item) => (
-                <Headers header={item.title} />
+                <Headers header={getLocalized(item, 'title')} />
                 ))}
 
                 {challenge_section
                 .filter(item => item.id === 1)
                 .map((item) => (
-                <p className='chal_p2'>{item.description}</p>
+                <p className='chal_p2'>{getLocalized(item, 'description')}</p>
                 ))}
 
 
@@ -180,26 +187,26 @@ const Home = () => {
                 {challenge_cards
                 .filter(item => item.id === 1)
                 .map((item) => (
-                <p className='chal_card1'>{item.text}</p>
+                <p className='chal_card1'>{getLocalized(item, 'text')}</p>
                 ))}
 
 
                 {challenge_cards
                 .filter(item => item.id === 2)
                 .map((item) => (
-                <p className='chal_card2'>{item.text}</p>
+                <p className='chal_card2'>{getLocalized(item, 'text')}</p>
                 ))}
 
                 {challenge_cards
                 .filter(item => item.id === 3)
                 .map((item) => (
-                <p className='chal_card3'>{item.text}</p>
+                <p className='chal_card3'>{getLocalized(item, 'text')}</p>
                 ))}
 
                 {challenge_cards
                 .filter(item => item.id === 4)
                 .map((item) => (
-                <p className='chal_card4'>{item.text}</p>
+                <p className='chal_card4'>{getLocalized(item, 'text')}</p>
                 ))}
 
             </div>
@@ -235,13 +242,13 @@ const Home = () => {
             .filter(item => item.id === 1)
             .map((item) => (
              <div key={item.id}>
-             <h1 className='safety_cards1_h'>{item.title}</h1>
+             <h1 className='safety_cards1_h'>{getLocalized(item, 'title')}</h1>
  
             {item.image && (
-              <img src={item.image} alt={item.title} />
+              <img src={item.image} alt={getLocalized(item, 'title')} />
             )}
 
-            <p className='safety_cards1_p'>{item.description}</p>
+            <p className='safety_cards1_p'>{getLocalized(item, 'description')}</p>
             </div>
             ))
             }
@@ -253,8 +260,8 @@ const Home = () => {
             .filter(item => item.id === 2)
             .map((item) => (
              <div key={item.id}>
-             <h1 className='safety_cards1_h'>{item.title}</h1>
-             <p className='safety_cards1_p'>{item.description}</p>
+             <h1 className='safety_cards1_h'>{getLocalized(item, 'title')}</h1>
+             <p className='safety_cards1_p'>{getLocalized(item, 'description')}</p>
             </div>
             ))
             }
@@ -268,8 +275,8 @@ const Home = () => {
             .filter(item => item.id === 3)
             .map((item) => (
             <div key={item.id}>
-             <h1 className='safety_cards1_h'>{item.title}</h1>
-             <p className='safety_cards1_p'>{item.description}</p>
+             <h1 className='safety_cards1_h'>{getLocalized(item, 'title')}</h1>
+             <p className='safety_cards1_p'>{getLocalized(item, 'description')}</p>
             </div>
             ))
             }
@@ -280,8 +287,8 @@ const Home = () => {
             .filter(item => item.id === 4)
             .map((item) => (
             <div key={item.id}>
-             <h1 className='safety_cards1_h'>{item.title}</h1>
-             <p className='safety_cards1_p'>{item.description}</p>
+             <h1 className='safety_cards1_h'>{getLocalized(item, 'title')}</h1>
+             <p className='safety_cards1_p'>{getLocalized(item, 'description')}</p>
             </div>
             ))
             }
@@ -309,7 +316,7 @@ const Home = () => {
         numberRate={item.rating}
         age={item.age}
         rate={rate}
-        feed={item.text}
+        feed={getLocalized(item, 'text')}
         />
         ))}
         </div>
@@ -331,7 +338,7 @@ const Home = () => {
             .map((item) => (
             <div key={item.id}>
                  <img src={item.icon} alt='loc_icon' className='loc_icon' />
-                 <p>{item.title}</p>
+                 <p>{getLocalized(item, 'title')}</p>
             </div>
             ))
             }
@@ -340,9 +347,9 @@ const Home = () => {
             {features
             .map((item) => (
             <div>
-            <p className='p_loc'>{item.description}</p>
+            <p className='p_loc'>{getLocalized(item, 'description')}</p>
             <Link className='a' to="/features">
-            <p className='Explore_btn'>{item.cta_link}</p>
+            <p className='Explore_btn'>{getLocalized(item, 'cta_link')}</p>
             </Link>
             </div>
             ))
