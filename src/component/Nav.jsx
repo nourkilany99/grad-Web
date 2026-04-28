@@ -93,6 +93,16 @@ const Nav = () => {
           }
         </Link>
 
+        <Link className='a' to='/about'>
+          {
+            nav 
+            .filter(item => item.id === 15)
+            .map(item => (
+              <p className='a' key={item.id}>{item.label_en}</p>
+            ))
+          }
+        </Link>
+
         {/* ✅ For Users Dropdown */}
         <Dropdown className='a'
           label={nav.find(item => item.id === 4)?.label_en}
@@ -107,8 +117,11 @@ const Nav = () => {
         <Dropdown className='a'
           label={nav.find(item => item.id === 7)?.label_en}
           links={[
-            { label: "Verification system", path: "/safety" },
+            { label: "safety & trust", path: "/safety" },
+            { label: "Verification system", path: "/verify" },
             { label: "Payment method", path: "/payment" },
+            { label: "Pricing", path: "/pricing" },
+            { label: "Terms & Conditions", path: "/terms" },
             // { label: "Check Status", path: "/verification/status" }
           ]}
         />
@@ -129,8 +142,8 @@ const Nav = () => {
           label={nav.find(item => item.id === 14)?.label_en}
           links={[
             { label: "contact", path: "/contact" },
-            { label: "reports", path: "/About" },
-            { label: "FQA", path: "/How" }
+            { label: "reports", path: "/reports" },
+            { label: "FQA", path: "/fqa" }
           ]}
         />
 

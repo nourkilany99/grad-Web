@@ -15,7 +15,7 @@
     position: absolute;
     z-index: 999;
     top: 0;
-    margin-top: 12%;
+    margin-top: 8%;
     /* left: 10;
     text-shadow: 2px 2px 20px rgba(31, 3, 8, 0.478); */
 }
@@ -25,7 +25,8 @@
     color: var(--white);
     font-size: 25vh;
     position: relative;
-    padding-top: 10%;
+    padding-top: 15%;
+    line-height: 90%;
 }
 
 .hero_s_features_p{
@@ -35,6 +36,7 @@
     line-height: 140%;
     font-size: 2vw;
     width: 50%;
+    /* padding: 2% 0 0 0; */
 
 }
 

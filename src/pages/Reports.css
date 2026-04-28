@@ -1,0 +1,216 @@
+.reports-page{
+    width: 80%;
+    padding: 0 10%;
+    margin-top: 8%;
+}
+
+.reports-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+}
+
+.reports-header h1{
+    color: var(--white);
+    font-family: bold;
+    font-size: 3.3vw;
+}
+
+.reports-header p{
+    color: var(--white2);
+    font-family: light;
+    font-size: 1.1vw;
+}
+
+.stats-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+}
+
+.stats-card{
+    background: linear-gradient(180deg, #2b2c33, #24252b);
+    border: 1px solid #393b44;
+    border-radius: 0.9vw;
+    padding: 1.3vw;
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stats-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.stats-icon{
+    width: 1.8vw;
+    height: 1.8vw;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #6f35ff, var(--sec-color));
+    color: var(--white);
+    font-family: semi;
+    font-size: 0.8vw;
+    margin-bottom: 0.7vw;
+}
+
+.stats-growth{
+    position: absolute;
+    right: 1.2vw;
+    top: 1vw;
+    font-family: semi;
+    font-size: 0.85vw;
+    color: #2cd293;
+}
+
+.stats-card h3{
+    color: var(--white);
+    font-family: semi;
+    font-size: 2.1vw;
+}
+
+.stats-card p{
+    color: var(--white2);
+    font-family: light;
+    font-size: 0.95vw;
+}
+
+.chart-card,
+.activity-card{
+    background: linear-gradient(180deg, #2b2c33, #24252b);
+    border: 1px solid #393b44;
+    border-radius: 0.9vw;
+    padding: 1.2vw;
+}
+
+.chart-card h3,
+.activity-card h3{
+    color: var(--white);
+    font-family: semi;
+    font-size: 1.25vw;
+    margin-bottom: 0.8vw;
+}
+
+.activity-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+}
+
+.activity-row{
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 0.7vw;
+    padding: 0.8vw 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activity-title{
+    color: var(--white);
+    font-family: reg;
+}
+
+.activity-time{
+    color: var(--white2);
+    font-family: light;
+    font-size: 0.9vw;
+}
+
+.activity-meta{
+    text-align: right;
+}
+
+.activity-price{
+    color: var(--white);
+    font-family: semi;
+}
+
+.activity-status{
+    font-family: semi;
+    font-size: 0.85vw;
+}
+
+.activity-status.done{
+    color: #2cd293;
+}
+
+.activity-status.progress{
+    color: #f0a31a;
+}
+
+@media (max-width: 900px){
+    .reports-page{
+        width: 90%;
+        padding: 0 5%;
+        margin-top: 24%;
+    }
+
+    .reports-container{
+        gap: 3vw;
+    }
+
+    .reports-header h1{
+        font-size: 9vw;
+    }
+
+    .reports-header p{
+        font-size: 3.3vw;
+    }
+
+    .stats-grid{
+        grid-template-columns: 1fr;
+        gap: 3vw;
+    }
+
+    .stats-card,
+    .chart-card,
+    .activity-card{
+        border-radius: 3.5vw;
+        padding: 4vw;
+    }
+
+    .stats-icon{
+        width: 7vw;
+        height: 7vw;
+        font-size: 3vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .stats-growth{
+        right: 4vw;
+        top: 4vw;
+        font-size: 3vw;
+    }
+
+    .stats-card h3{
+        font-size: 8vw;
+    }
+
+    .stats-card p{
+        font-size: 3vw;
+    }
+
+    .chart-card h3,
+    .activity-card h3{
+        font-size: 4.2vw;
+        margin-bottom: 3vw;
+    }
+
+    .activity-list{
+        gap: 2vw;
+    }
+
+    .activity-row{
+        border-radius: 3vw;
+        padding: 2.8vw 3vw;
+    }
+
+    .activity-time,
+    .activity-status{
+        font-size: 2.8vw;
+    }
+}

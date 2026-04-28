@@ -4,13 +4,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: -2%;
+    margin-top: 3%;
+    padding: 0 8% 0 2%;
 }
 
 .solution_img{
     width: 50%;
     position: relative;
-    z-index: 9999;
 }
 
 .solution_p{

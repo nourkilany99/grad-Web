@@ -14,6 +14,7 @@ import GreenDiv2 from '../common/GreenDiv2';
 import sticker from '../Assets/Img/how_stick1.svg';
 import DownloadTag from '../common/DownloadTag';
 import secure_inchat from '../Assets/Img/secure_inchat.svg'
+import Footer from '../common/Footer';
 
 const Safety = () => {
     return ( 
@@ -96,6 +97,7 @@ const Safety = () => {
             </div>
 
         </div>
+        <Footer />
         </>
      );
 }

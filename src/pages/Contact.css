@@ -6,6 +6,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 0 5%;
+    margin-top: 8%;
 }
 
 .contact_hero{
@@ -21,7 +22,7 @@
 .and_hero2{
     color: var(--pink);
     font-family: decor;
-    font-size: 28vw;
+    font-size: 23vw;
     margin: 0 auto;
     position: absolute;
     margin-left: -1vw; 

@@ -17,6 +17,7 @@ import GreenDiv from '../common/GreenDiv';
 import Header from '../common/Headers';
 import taregt1 from '../Assets/Img/target1.svg';
 import taregt2 from '../Assets/Img/target2.svg';
+import Footer from '../common/Footer';
 
 
 
@@ -92,6 +93,7 @@ const About = () => {
                 </div>
             </div>
         </div>
+        <Footer />
         </>
      );
 }

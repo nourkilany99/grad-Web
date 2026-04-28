@@ -11,6 +11,7 @@ import Skillcard from '../common/Skill_card';
 import WalkTitle from '../common/WalkTitle';
 import WalkThrough from '../common/WalkThrough';
 import mobile from '../Assets/Img/walkmobile.svg';
+import Footer from '../common/Footer';
 
 
 const Taskowner = () => {
@@ -58,6 +59,7 @@ const Taskowner = () => {
         </div>
         </div>
 
+        <Footer />
         </>
      );
 }

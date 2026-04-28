@@ -14,7 +14,7 @@
 header {
   margin: 0% 10%;
   padding: 1% 5%;
-  width: 70%;
+  width: 80%;
   background-color: #1f1f1fb5;
   border-radius: 55px;
   position: absolute;
@@ -24,6 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 9999;
 }
 
 .logo{
@@ -126,9 +127,9 @@ nav{
   position: absolute;
     top: 3vw;
     left: 0;
-    background: #14141459;
+    background: #141414b2;
     border-radius: 8px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -138,4 +139,7 @@ nav{
     text-decoration: none;
     color: #fefefe;
     z-index: 9999;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px #2b2b2b;
 }

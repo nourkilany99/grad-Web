@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './Contact.css';
-import pink_line from '../Assets/Img/decor_line_about.svg';
+import pink_line from '../Assets/Img/pink_line.svg';
 import chatIcon from '../Assets/Img/chatIcon.svg';
 import callIcon from '../Assets/Img/callIcon.svg';
 import fqaIcon from '../Assets/Img/fqaIcon.svg';
+import Footer from '../common/Footer';
 
 
 const Contact = () => {
@@ -82,6 +83,7 @@ const Contact = () => {
         </section>
 
 
+        <Footer />
         </>
      );
 }

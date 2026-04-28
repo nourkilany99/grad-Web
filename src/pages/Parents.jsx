@@ -12,6 +12,7 @@ import lock2 from '../Assets/Img/lock2.svg';
 import WalkTitle from '../common/WalkTitle';
 import WalkThrough from '../common/WalkThrough';
 import mobile from '../Assets/Img/walkmobile.svg';
+import Footer from '../common/Footer';
 
 const Parents = () => {
     return ( 
@@ -73,6 +74,7 @@ const Parents = () => {
         <WalkThrough  no='1.' wayImg={mobile} details='Login or Sign up'  />
         </div>
         </div>
+        <Footer />
         </>
      );
 }

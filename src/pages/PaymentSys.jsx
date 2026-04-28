@@ -7,6 +7,7 @@ import DownloadTag from '../common/DownloadTag';
 import GreenDiv2 from '../common/GreenDiv2';
 import sticker from '../Assets/Img/how_stick1.svg';
 import PaymentProcess from '../component/PaymentProcess';
+import Footer from '../common/Footer';
 
 const PaymentSys = () => {
     return ( 
@@ -38,10 +39,7 @@ const PaymentSys = () => {
             <PaymentProcess />
        
         </section>
-
-
-
-
+        <Footer />
         </>
      );
 }

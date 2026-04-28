@@ -3,9 +3,11 @@ import './How.css';
 import logo from '../Assets/Img/decor_Logo.svg';
 import pink_line from '../Assets/Img/pink_line.svg';
 import GroupHow from '../Assets/Img/GroupHow.svg';
-import reveal from '../Assets/Img/explore_imgs.svg';
+import reveal from '../Assets/Img/expl_img.svg';
 import down from '../Assets/Img/VectorDown.svg';
 import Steps from '../common/Steps';
+import Footer from '../common/Footer';
+
 
 const How = () => {
     return ( 
@@ -41,6 +43,8 @@ const How = () => {
             <Steps />
             <Steps />
         </div>
+
+        <Footer />
         </>
      );
 }

@@ -7,6 +7,7 @@ import location from '../Assets/Img/location.svg';
 import chatIcon from '../Assets/Img/chatIcon.svg';
 import rate from '../Assets/Img/rate.svg';
 import downloadIcon from '../Assets/Img/downloadIcon.svg';
+import Footer from '../common/Footer';
 
 
 const Features = () => {
@@ -91,7 +92,7 @@ const Features = () => {
             </div>
         </section>
 
-        
+        <Footer />
         </>
      );
 }

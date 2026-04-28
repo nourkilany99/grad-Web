@@ -1,0 +1,312 @@
+.pricing-page{
+    width: 80%;
+    padding: 0 10%;
+    margin-top: 8%;
+}
+
+.pricing-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.2vw;
+}
+
+.pricing-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8vw;
+    color: var(--white);
+    text-align: center;
+}
+
+.pricing-hero h1{
+    font-family: bold;
+    font-size: 4vw;
+}
+
+.pricing-hero p{
+    font-family: light;
+    color: var(--white2);
+    font-size: 1.2vw;
+}
+
+.billing-toggle{
+    display: flex;
+    align-items: center;
+    gap: 0.8vw;
+    font-family: reg;
+    color: var(--white2);
+    font-size: 1vw;
+}
+
+.toggle-ui{
+    width: 2.7vw;
+    height: 1.5vw;
+    border: 1px solid #4e4e57;
+    border-radius: 25px;
+    background: #262730;
+    display: flex;
+    align-items: center;
+    padding: 0 0.16vw;
+    cursor: pointer;
+}
+
+.toggle-ui span{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #6f35ff, var(--sec-color));
+}
+
+.pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3vw;
+}
+
+.plan-card{
+    background: linear-gradient(180deg, #2b2c32, #24252b);
+    border: 1px solid #3b3c44;
+    border-radius: 1.2vw;
+    padding: 1.4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+    color: var(--white);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.plan-card:hover{
+    transform: translateY(-4px);
+    border-color: #585a66;
+}
+
+.plan-card-pro{
+    border-color: #8a44ff;
+    box-shadow: 0 0 30px rgba(166, 9, 240, 0.28);
+}
+
+.popular-badge{
+    position: absolute;
+    top: -0.75vw;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    background: linear-gradient(90deg, #6f35ff, var(--sec-color));
+    color: var(--white);
+    font-family: semi;
+    font-size: 0.8vw;
+    padding: 0.3vw 1vw;
+}
+
+.plan-card h3{
+    font-family: semi;
+    font-size: 1.7vw;
+}
+
+.plan-subtitle{
+    font-family: light;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9vw;
+}
+
+.price-row{
+    display: flex;
+    align-items: end;
+    gap: 0.2vw;
+}
+
+.price{
+    font-family: semi;
+    font-size: 3vw;
+}
+
+.per-month{
+    font-family: light;
+    color: var(--white2);
+    margin-bottom: 0.6vw;
+}
+
+.plan-btn{
+    width: 100%;
+    border: none;
+    border-radius: 0.9vw;
+    background: linear-gradient(90deg, #6f35ff, var(--sec-color));
+    color: var(--white);
+    font-family: semi;
+    font-size: 1vw;
+    padding: 0.7vw 0;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.plan-btn:hover{
+    opacity: 0.9;
+}
+
+.plan-card ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45vw;
+    font-family: light;
+    font-size: 0.9vw;
+}
+
+.enabled{
+    color: #7fdfac;
+}
+
+.disabled{
+    color: rgba(255, 255, 255, 0.28);
+}
+
+.comparison-wrap{
+    background: linear-gradient(180deg, #2b2c32, #23242b);
+    border: 1px solid #3a3c45;
+    border-radius: 1.2vw;
+    padding: 1.6vw;
+}
+
+.comparison-wrap h2{
+    color: var(--white);
+    text-align: center;
+    font-family: semi;
+    font-size: 2vw;
+    margin-bottom: 1.2vw;
+}
+
+.comparison-table{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.comparison-head{
+    color: var(--white);
+    font-family: semi;
+    font-size: 1.1vw;
+    border-bottom: 1px solid #3d3f4b;
+    padding: 0.8vw 0.5vw;
+}
+
+.comparison-cell{
+    border-bottom: 1px solid #32343f;
+    color: var(--white2);
+    font-family: light;
+    font-size: 0.95vw;
+    padding: 0.9vw 0.5vw;
+}
+
+.comparison-cell.feature{
+    color: var(--white);
+}
+
+.check{
+    color: #7fdfac;
+}
+
+.cross{
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.text-value{
+    color: var(--white);
+}
+
+@media (max-width: 900px){
+    .pricing-page{
+        margin-top: 24%;
+        width: 90%;
+        padding: 0 5%;
+    }
+
+    .pricing-hero h1{
+        font-size: 12vw;
+    }
+
+    .pricing-hero p{
+        font-size: 3.6vw;
+    }
+
+    .billing-toggle{
+        font-size: 3vw;
+        gap: 2vw;
+    }
+
+    .toggle-ui{
+        width: 10vw;
+        height: 5.8vw;
+        padding: 0 0.8vw;
+    }
+
+    .toggle-ui span{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .pricing-grid{
+        grid-template-columns: 1fr;
+        gap: 4vw;
+    }
+
+    .plan-card{
+        border-radius: 4vw;
+        padding: 5vw;
+        gap: 2.2vw;
+    }
+
+    .popular-badge{
+        top: -2vw;
+        font-size: 3vw;
+        padding: 1.2vw 4vw;
+    }
+
+    .plan-card h3{
+        font-size: 6vw;
+    }
+
+    .plan-subtitle{
+        font-size: 3vw;
+    }
+
+    .price{
+        font-size: 11vw;
+    }
+
+    .per-month{
+        margin-bottom: 2vw;
+    }
+
+    .plan-btn{
+        border-radius: 3vw;
+        font-size: 3.5vw;
+        padding: 2.8vw 0;
+    }
+
+    .plan-card ul{
+        font-size: 3vw;
+        gap: 1.8vw;
+    }
+
+    .comparison-wrap{
+        border-radius: 4vw;
+        padding: 4vw;
+    }
+
+    .comparison-wrap h2{
+        font-size: 6vw;
+        margin-bottom: 4vw;
+    }
+
+    .comparison-head{
+        font-size: 3vw;
+        padding: 2.5vw 1vw;
+    }
+
+    .comparison-cell{
+        font-size: 2.8vw;
+        padding: 2.8vw 1vw;
+    }
+}

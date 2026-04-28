@@ -7,7 +7,6 @@ import { supabase } from '../Supabase';
 import Section3 from '../component/Section3';
 import OnBtns from '../common/OnBtns'
 import OffBtn from '../common/OffBtn';
-import Footer from './Footer';
 import user_feed_img from '../Assets/Img/user_feed_img1.svg';
 import rate from '../Assets/Img/rate.svg';
 import Feedback from '../common/Feedback';
@@ -17,7 +16,7 @@ import logo from '../Assets/Img/greenlogo.svg';
 import loc_icon from '../Assets/Img/loc.svg';
 import grp_loc from '../Assets/Img/GroupLoc.svg';
 import { Link} from "react-router-dom";
-
+import Footer from '../common/Footer';
 
 
 const Home = () => {    
@@ -357,7 +356,7 @@ const Home = () => {
     </section>
 
     <Footer />
-    
+
     
 
     </> 

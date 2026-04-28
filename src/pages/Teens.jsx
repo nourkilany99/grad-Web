@@ -13,6 +13,7 @@ import DownloadTag from '../common/DownloadTag';
 import WalkThrough from '../common/WalkThrough';
 import mobile from '../Assets/Img/walkmobile.svg';
 import WalkTitle from '../common/WalkTitle';
+import Footer from '../common/Footer';
 
 
 const Teens = () => {
@@ -65,7 +66,7 @@ const Teens = () => {
         <WalkThrough  no='5.' wayImg={mobile} details='Login or Sign up'  />
         </div>
         </div>
-            
+        <Footer />
         </>
      );
 }
