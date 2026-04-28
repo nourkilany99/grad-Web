@@ -100,8 +100,8 @@ const Reports = () => {
                                 <YAxis stroke='#8f94a3' />
                                 <Tooltip />
                                 <Legend />
-                                <Bar dataKey='tasks' fill='#7b4dff' radius={[6, 6, 0, 0]} />
-                                <Bar dataKey='earnings' fill='#eb4aac' radius={[6, 6, 0, 0]} />
+                                <Bar dataKey='tasks' fill='#2C5E49' radius={[6, 6, 0, 0]} />
+                                <Bar dataKey='earnings' fill='#C56FED' radius={[6, 6, 0, 0]} />
                             </BarChart>
                         </ResponsiveContainer>
                     </div>

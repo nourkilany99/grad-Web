@@ -9,11 +9,15 @@
     flex-direction: column;
     gap: 1.2vw;
 }
+.reports-header{
+    padding: 3% 0 ;
+}
 
 .reports-header h1{
-    color: var(--white);
-    font-family: bold;
-    font-size: 3.3vw;
+    color: var(--main-color);
+    font-family: luicy;
+    font-size: 4.3vw;
+    -webkit-text-stroke: 0.2px #141414;
 }
 
 .reports-header p{
@@ -29,7 +33,7 @@
 }
 
 .stats-card{
-    background: linear-gradient(180deg, #2b2c33, #24252b);
+    background: #202020;
     border: 1px solid #393b44;
     border-radius: 0.9vw;
     padding: 1.3vw;
@@ -49,7 +53,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(90deg, #6f35ff, var(--sec-color));
+    background: var(--sec-color);
     color: var(--white);
     font-family: semi;
     font-size: 0.8vw;
@@ -79,7 +83,7 @@
 
 .chart-card,
 .activity-card{
-    background: linear-gradient(180deg, #2b2c33, #24252b);
+    background: #202020;
     border: 1px solid #393b44;
     border-radius: 0.9vw;
     padding: 1.2vw;
@@ -103,7 +107,7 @@
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 0.7vw;
-    padding: 0.8vw 1vw;
+    padding: 1.8vw 1vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
