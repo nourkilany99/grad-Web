@@ -149,8 +149,12 @@ const Nav = () => {
 
       </nav>
 
-      {/* CTA Button */}
+      {/* CTA Button + Language Switch */}
       <div className='cta-download-div'>
+        <div className='language-switch'>
+          <button type='button' className='language-btn'>AR</button>
+          <button type='button' className='language-btn active'>EN</button>
+        </div>
         <div className='cta-download'>
           {
             buttons
